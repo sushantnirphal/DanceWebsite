@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  
+block style 
+      style 
+        include ../static/style.css 
+        
+block content
+      section#introSection 
+        div Welcome to Sushant's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+      section#missionSection 
+        h1 Our Mission
+        div.card
+            h3 Dance perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/logo/im1.jpg") 
+                div.card-content 
+                    p This is the best dance academy of the universe   
+        div.card
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/logo/im02.png") 
+                div.card-content 
+                    p This is the best dance academy of the universe 
+        div.card
+            h3 Expert teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/logo/img1.png") 
+                div.card-content 
+                    p This is the best dance academy of the universe 
+      section#sponsorsSection 
+          h1 Our Sponsors 
+          div#sponsors
+              img(src="/static/logo/apple-logo.jpg", alt="Sponsors Image", class="spImage") 
+              img(src="/static/logo/microsoft-logo.png", alt="Sponsors Image", class="spImage") 
+              img(src="/static/logo/logo-hp.png", alt="Sponsors Image", class="spImage") 
+              img(src="/static/logo/skype-logo.png", alt="Sponsors Image", class="spImage") 
+          
